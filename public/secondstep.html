@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome.</title>
+    <link rel="stylesheet" href="css/puzzle1.css">
+</head>
+
+<body>
+    <div id="puzzle-container">
+        <div id="greeting">Excellent. You have done well.</div>
+        <div id="puzzle1">
+            You have made it to the local stage of the puzzle. If you are local to central Illinois, please submit your
+            email below.
+        </div>
+        <div id="separator">You will be contacted when enough people are ready for the next stage.</div>
+        <form method="post" action="/secondstage">
+            <input type="email" name="email" id="email" placeholder="Your Email">
+            <button class="butn-dark mt-15"><span>Send</span></button>
+        </form>
+    </div>
+</body>
+
+</html>
