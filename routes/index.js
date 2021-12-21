@@ -29,14 +29,4 @@ router.post("/messagebox", (req, res) => {
     }
 })
 
-router.post("/secondstage", (req, res) => {
-    fs.appendFile("lelmails.txt", req.body.email + "\n", err => {
-        if (err) {
-            console.error(err)
-            return
-        }
-    })
-    res.send("Thank you.")
-})
-
 module.exports = router
